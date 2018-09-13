@@ -14,6 +14,6 @@
         </div>
     {% endif %}
 
-    {{ block.video.iframe.autoplay(block.autoplay.value).showinfo(block.show_info.value)|raw }}
+    {{ block.video.iframe.autoplay(block.autoplay.value ?: (block.cover.id ? true)).showinfo(block.show_info.value)|raw }}
 
 </div>
