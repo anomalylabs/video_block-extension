@@ -1,0 +1,38 @@
+{
+    "name": "anomaly/video_block-extension",
+    "type": "streams-addon",
+    "description": "A video player block.",
+    "keywords": [
+        "streams addon",
+        "block type",
+        "blocks"
+    ],
+    "homepage": "http://pyrocms.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "PyroCMS, Inc.",
+            "email": "support@pyrocms.com",
+            "homepage": "http://pyrocms.com/",
+            "role": "Owner"
+        },
+        {
+            "name": "Ryan Thompson",
+            "email": "ryan@pyrocms.com",
+            "homepage": "http://ryanthepyro.com/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@pyrocms.com"
+    },
+    "require": {
+        "anomaly/blocks-module": "^1.0",
+        "anomaly/video-field_type": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Anomaly\\VideoBlockExtension\\": "src/"
+        }
+    }
+}
