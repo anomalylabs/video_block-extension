@@ -1,2 +1,2 @@
-# video_block-extension
+# Video Block Extension
 A video player block.
