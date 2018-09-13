@@ -1,10 +1,11 @@
 <?php
 
 return [
-    'video'     => [
+    'video' => [
         'name' => 'Video',
     ],
-    'cover'     => [
-        'name' => 'Cover Image',
+    'cover' => [
+        'name'         => 'Cover',
+        'instructions' => 'Specify your own cover image if desired.',
     ],
 ];

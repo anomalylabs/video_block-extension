@@ -1,5 +1,15 @@
 {{ asset_add("styles.css", "anomaly.extension.video_block::scss/block.scss") }}
+{{ asset_add("scripts.js", "anomaly.extension.video_block::js/block.js") }}
+
 
 <div class="video__wrapper">
+
+    {% if block.cover.id and not block.autoplay.value %}
+        <div class="video__cover" style="background-image: {{ block.cover.make.resize(1500).css }}">
+            {{ img('anomaly.extension.video_block::img/play-button.svg').data|raw }}
+        </div>
+    {% endif %}
+
     {{ block.video.iframe.autoplay(block.autoplay.value).showinfo(block.show_info.value)|raw }}
+
 </div>

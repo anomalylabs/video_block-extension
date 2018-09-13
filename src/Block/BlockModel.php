@@ -13,4 +13,12 @@ use Anomaly\VideoBlockExtension\Block\Contract\BlockInterface;
 class BlockModel extends VideoBlockBlocksEntryModel implements BlockInterface
 {
 
+    /**
+     * Eager load these relations.
+     *
+     * @var array
+     */
+    protected $with = [
+        'cover',
+    ];
 }
