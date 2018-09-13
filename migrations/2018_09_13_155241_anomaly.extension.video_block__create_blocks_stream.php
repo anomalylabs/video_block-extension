@@ -18,8 +18,7 @@ class AnomalyExtensionVideoBlockCreateBlocksStream extends Migration
      * @var array
      */
     protected $stream = [
-        'slug'         => 'blocks',
-        'title_column' => 'name',
+        'slug' => 'blocks',
     ];
 
     /**
@@ -28,11 +27,10 @@ class AnomalyExtensionVideoBlockCreateBlocksStream extends Migration
      * @var array
      */
     protected $assignments = [
-        'video'    => [
+        'video' => [
             'required' => true,
         ],
-        'cover'    => 'anomaly.field_type.file',
-        'autoplay' => 'anomaly.field_type.boolean',
+        'cover',
     ];
 
 }

@@ -18,9 +18,8 @@ class AnomalyExtensionVideoBlockCreateVideoBlockFields extends Migration
      * @var array
      */
     protected $fields = [
-        'video'    => 'anomaly.field_type.video',
-        'cover'    => 'anomaly.field_type.file',
-        'autoplay' => 'anomaly.field_type.boolean',
+        'video' => 'anomaly.field_type.video',
+        'cover' => 'anomaly.field_type.file',
     ];
 
 }

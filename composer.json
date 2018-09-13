@@ -28,7 +28,7 @@
     },
     "require": {
         "anomaly/blocks-module": "^1.0",
-        "anomaly/video-field_type": "^1.0"
+        "anomaly/video-field_type": "^1.1"
     },
     "autoload": {
         "psr-4": {

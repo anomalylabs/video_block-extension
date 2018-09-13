@@ -1,21 +1,38 @@
 <?php namespace Anomaly\VideoBlockExtension;
 
-use Anomaly\Streams\Platform\Addon\Extension\Extension;
+use Anomaly\BlocksModule\Block\BlockExtension;
+use Anomaly\VideoBlockExtension\Block\BlockModel;
 
-class VideoBlockExtension extends Extension
+/**
+ * Class VideoBlockExtension
+ *
+ * @link   http://pyrocms.com/
+ * @author PyroCMS, Inc. <support@pyrocms.com>
+ * @author Ryan Thompson <ryan@pyrocms.com>
+ */
+class VideoBlockExtension extends BlockExtension
 {
 
     /**
-     * This extension provides...
+     * This extension provides a simple video
+     * player block for the blocks module,
      *
-     * This should contain the dot namespace
-     * of the addon this extension is for followed
-     * by the purpose.variation of the extension.
-     *
-     * For example anomaly.module.store::gateway.stripe
-     *
-     * @var null|string
+     * @var string
      */
-    protected $provides = null;
+    protected $provides = 'anomaly.module.blocks::block.video';
+
+    /**
+     * The block content view.
+     *
+     * @var string
+     */
+    protected $view = 'anomaly.extension.video_block::content';
+
+    /**
+     * The block model.
+     *
+     * @var string
+     */
+    protected $model = BlockModel::class;
 
 }

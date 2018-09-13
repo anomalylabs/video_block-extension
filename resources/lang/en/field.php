@@ -1,13 +1,10 @@
 <?php
 
 return [
-    'video'    => [
+    'video'     => [
         'name' => 'Video',
     ],
-    'cover'    => [
+    'cover'     => [
         'name' => 'Cover Image',
-    ],
-    'autoplay' => [
-        'name' => 'Autoplay',
     ],
 ];
