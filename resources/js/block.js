@@ -7,6 +7,7 @@
     blocks.forEach(function (block) {
 
         let wrapper = block.querySelector('.video__wrapper');
+        let loader = wrapper.querySelector('.video__loading');
         let cover = wrapper.querySelector('.video__cover');
         let iframe = wrapper.querySelector('iframe');
 
@@ -19,9 +20,12 @@
         cover.addEventListener('click', function () {
 
             wrapper.appendChild(iframe);
+            wrapper.removeChild(cover);
+
+            loader.style.display = null;
 
             iframe.onload = function () {
-                wrapper.removeChild(cover);
+                wrapper.removeChild(loader);
             }
         });
 

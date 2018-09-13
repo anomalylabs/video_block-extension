@@ -8,6 +8,10 @@
         <div class="video__cover" style="background-image: {{ block.cover.make.resize(1500).css }}">
             {{ img('anomaly.extension.video_block::img/play-button.svg').data|raw }}
         </div>
+
+        <div class="video__loading" style="background-image: {{ block.cover.make.resize(1500).css }}; display: none;">
+            {{ img('anomaly.extension.video_block::img/loading.svg').data|raw }}
+        </div>
     {% endif %}
 
     {{ block.video.iframe.autoplay(block.autoplay.value).showinfo(block.show_info.value)|raw }}
