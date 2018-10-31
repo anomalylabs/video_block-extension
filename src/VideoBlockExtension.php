@@ -14,6 +14,13 @@ class VideoBlockExtension extends BlockExtension
 {
 
     /**
+     * The extension category.
+     *
+     * @var string
+     */
+    protected $category = 'media';
+
+    /**
      * This extension provides a simple video
      * player block for the blocks module,
      *
